@@ -79,7 +79,8 @@ If you encounter false positives, please open an issue
 
 ## License
 This project is licensed under the **Community Use License (CUL-1.0)**.  
-You are free to use and share this software for personal and internal use.  
+You are free to use and share this software  with anyone, as long as the software is shared in its original, unmodified form and includes
+this copyright notice and license.  
 Modifications are allowed only for private use or contributions submitted back to this repository.  
 Forks, redistributions of modified versions, or removal of credits are prohibited.  
 See the [LICENSE](LICENSE) file for full details.
