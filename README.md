@@ -71,7 +71,17 @@ If you encounter false positives, please open an issue
 ---
 
 ## 🙏 Credits
-Developed by RMC
-Thanks to Sodium and anadius for their contributions and references
+- Developed by **RMC**  
+- Special thanks to **Sodium.exe** and **anadius** (and chatgpt too) 
+- If you use or redistribute this project, please leave proper credits.
+
+---
+
+## License
+This project is licensed under the **Community Use License (CUL-1.0)**.  
+You are free to use and share this software for personal and internal use.  
+Modifications are allowed only for private use or contributions submitted back to this repository.  
+Forks, redistributions of modified versions, or removal of credits are prohibited.  
+See the [LICENSE](LICENSE) file for full details.
 
 ---
