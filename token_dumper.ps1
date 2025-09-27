@@ -135,14 +135,28 @@ $pbar.Size = "635,25"
 $form.Controls.Add($pbar)
 
 # Signature label bottom center
-$lblSignature = New-Object System.Windows.Forms.Label
-$lblSignature.Text = "Made by RMC`nThanks to Sodium and anadius"
+$lblSignature = New-Object System.Windows.Forms.LinkLabel
+$lblSignature.Text = "Made by RMC`nThanks to Sodium and anadius`nApp GitHub Repo: https://github.com/RMC-4/EA-License-Token-Dumper/"
+
+# Find the start of the URL inside the text
+$startIndex = $lblSignature.Text.IndexOf("https://github.com/RMC-4/EA-License-Token-Dumper/")
+$null = $lblSignature.Links.Add($startIndex, ($lblSignature.Text.Length - $startIndex), "https://github.com/RMC-4/EA-License-Token-Dumper/")
+
 $lblSignature.Font = New-Object System.Drawing.Font("Segoe UI", 8, [System.Drawing.FontStyle]::Italic)
-$lblSignature.ForeColor = [System.Drawing.Color]::FromArgb(100,100,100)
+$lblSignature.LinkColor = [System.Drawing.Color]::FromArgb(0, 70, 130)   # blue
+$lblSignature.ActiveLinkColor = [System.Drawing.Color]::FromArgb(0, 70, 130) # stay blue when clicked
+$lblSignature.VisitedLinkColor = [System.Drawing.Color]::FromArgb(0, 70, 130) # stay blue after visited
 $lblSignature.AutoSize = $true
 $lblSignature.TextAlign = 'MiddleCenter'
+
+# Open link in browser when clicked
+$lblSignature.add_LinkClicked({
+    Start-Process $lblSignature.Links[0].LinkData
+})
+
 $form.Controls.Add($lblSignature)
 
+# Center below progress bar
 $form.Add_Shown({
     $x = [int](($form.ClientSize.Width - $lblSignature.PreferredWidth) / 2)
     $y = $pbar.Location.Y + $pbar.Height + 5
