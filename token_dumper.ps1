@@ -1,3 +1,11 @@
+<#
+    EA Denuvo Token Dumper
+    Copyright (C) 2025 RMC
+    Licensed under the Community Use License (CUL-1.0)
+    See: https://github.com/RMC-4/EA-License-Token-Dumper/blob/main/LICENSE
+#>
+
+
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
