@@ -1,0 +1,7 @@
+# Build folders
+build/
+native/build/
+*.obj
+*.pdb
+*.dll
+*.lib
