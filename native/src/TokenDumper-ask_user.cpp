@@ -1,3 +1,11 @@
+// <#
+//     EA Denuvo Token Dumper
+//     Copyright (C) 2025 RMC
+//     Licensed under the Community Use License (CUL-1.0)
+//     See: https://github.com/RMC-4/EA-License-Token-Dumper/blob/main/LICENSE
+// #>
+
+
 #include <windows.h>
 #include <fstream>
 #include <sstream>
