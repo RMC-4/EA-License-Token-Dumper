@@ -5,3 +5,5 @@ native/build/
 *.pdb
 *.dll
 *.lib
+
+release_notes.md
