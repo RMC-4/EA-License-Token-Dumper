@@ -111,6 +111,7 @@ extern "C" __declspec(dllexport) void Run(bool overwrite = true)
         if (MarkerExists())
         {
             // DLL logic already run for this app execution, do nothing
+            RemoveMarker();
             return;
         }
 
