@@ -49,6 +49,9 @@ Each release includes a **SHA256 hash** so you can verify integrity.
 ### ⚡ Native C++ DLL
    - Especially made for FC26 Showcase version but could work with other title too (just need more tweaking)
    - Run with a dll injector or rundll32 **`ShowcaseTokenDumper.dll`**  
+         OR
+   - Add this line to anadius.cfg in Emulator section:  
+        **"LoadExtraDLLsFromMain" "ShowcaseTokenDumper.dll"**
 
 ---
 
